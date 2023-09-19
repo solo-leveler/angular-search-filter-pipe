@@ -10,7 +10,8 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class MainComponent implements OnInit, AfterViewInit {
   constructor(private httpClient: HttpClient) {}
-  displayedColumns: string[] = ['Capital', 'Languages', 'Name', 'Population'];
+  object = Object;
+  displayedColumns: string[] = ['capital', 'languages', 'name', 'population'];
   dataSource = new MatTableDataSource<CountryModel>();
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
