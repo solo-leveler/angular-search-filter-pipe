@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -12,7 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     MatTableModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatPaginatorModule,
+    HttpClientModule
   ],
   declarations: [MainComponent],
   bootstrap : [MainComponent]
