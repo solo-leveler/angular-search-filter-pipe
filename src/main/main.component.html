@@ -1,3 +1,13 @@
+<div class="d-flex">
+  <div class="row">
+    <div class="outline-input no-label">
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Search..." [(ngModel)]="searchText" />
+        <mat-icon class="cust-search-ico" matSuffix>search</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource">
     <!-- Name Column -->
