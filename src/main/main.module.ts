@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { PureSearchPipe } from './pure-search.pipe';
 
 @NgModule({
   imports: [
@@ -26,7 +27,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     HttpClientModule,
     BrowserAnimationsModule,
   ],
-  declarations: [MainComponent],
+  declarations: [MainComponent, PureSearchPipe],
   bootstrap: [MainComponent],
 })
 export class MainModule {}
