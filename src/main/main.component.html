@@ -13,7 +13,7 @@
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef>Name</th>
-      <td mat-cell *matCellDef="let element">{{ element.name.official }}</td>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
     </ng-container>
 
     <!-- capital Column -->
@@ -26,7 +26,7 @@
     <ng-container matColumnDef="languages">
       <th mat-header-cell *matHeaderCellDef>Languages</th>
       <td mat-cell *matCellDef="let element">
-        {{ object.values(element.languages) }}
+        {{ element.languages }}
       </td>
     </ng-container>
 

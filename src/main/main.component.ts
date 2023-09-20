@@ -30,6 +30,11 @@ export class MainComponent implements OnInit, AfterViewInit {
         'https://restcountries.com/v3.1/all?fields=name,capital,languages,population'
       )
       .subscribe((res) => {
+        
+        res.forEach((el: any) => {
+          (el.name = el.name.official),
+            (el.languages = Object.values(el.languages));
+        });
         this.dataSource.data = res;
       });
   }
