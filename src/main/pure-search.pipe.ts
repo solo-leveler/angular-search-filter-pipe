@@ -5,11 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PureSearchPipe implements PipeTransform {
   transform(items: any, searchText: string): any[] {
-    if (!items) return [];
+    if (!items.data) return [];
     if (!searchText) return items;
     const regexp = new RegExp(searchText, 'i');
     return [
-      ...items.filter((item) => {
+      ...items.data.filter((item) => {
         const properties = Object.keys(item);
         return properties.some((property) => regexp.test(item[property]));
       }),
