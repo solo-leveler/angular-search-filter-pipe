@@ -30,11 +30,13 @@ export class MainComponent implements OnInit, AfterViewInit {
         'https://restcountries.com/v3.1/all?fields=name,capital,languages,population'
       )
       .subscribe((res) => {
-        
+        //this foreach is used to make it as a single-depth-object
         res.forEach((el: any) => {
           (el.name = el.name.official),
             (el.languages = Object.values(el.languages));
         });
+        //this single-dept object is kinda required for the search pipe to work
+        //you can make sure that the object you use is single-depth
         this.dataSource.data = res;
       });
   }
