@@ -3,6 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'pureSearch',
   pure: false,
+  //Althoug I intended to make it as pure pipe but since api was taking too long it had to be made impure
 })
 export class PureSearchPipe implements PipeTransform {
   transform(items: any, searchText: string, countObj: any): any[] {
