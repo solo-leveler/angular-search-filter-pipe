@@ -1,5 +1,12 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterContentChecked,
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 
@@ -8,10 +15,15 @@ import { MatTableDataSource } from '@angular/material/table';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],
 })
-export class MainComponent implements OnInit, AfterViewInit {
-  constructor(private httpClient: HttpClient) {}
+export class MainComponent
+  implements OnInit, AfterViewInit, AfterContentChecked
+{
+  constructor(private httpClient: HttpClient, private ref: ChangeDetectorRef) {}
   object = Object;
   searchText: string;
+  countObj = {
+    searchCount: 0,
+  };
   displayedColumns: string[] = ['name', 'capital', 'languages', 'population'];
   dataSource = new MatTableDataSource<CountryModel>();
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -22,6 +34,9 @@ export class MainComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+  }
+  ngAfterContentChecked() {
+    this.ref.detectChanges();
   }
 
   getCountriesAPI() {

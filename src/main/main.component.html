@@ -5,9 +5,12 @@
       <mat-icon class="cust-search-ico" matSuffix>search</mat-icon>
     </mat-form-field>
   </div>
+  <div class="row">
+    <h3>Total Countries ({{ countObj.searchCount }})</h3>
+  </div>
 </div>
 <div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource | pureSearch: searchText">
+  <table mat-table [dataSource]="dataSource | pureSearch: searchText:countObj">
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef>Name</th>
