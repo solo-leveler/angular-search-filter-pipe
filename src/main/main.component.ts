@@ -35,6 +35,7 @@ export class MainComponent
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
+  //This is to avoid ExpressionChangedAfterItHasBeenCheckedError on console
   ngAfterContentChecked() {
     this.ref.detectChanges();
   }
