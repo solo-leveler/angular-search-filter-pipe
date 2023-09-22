@@ -4,7 +4,6 @@
 
 ### About the Project
 ---
-Custom Angular Search Filter Pipe. 
 
 A custom search filter pipe using angular.
 ### Overview 
