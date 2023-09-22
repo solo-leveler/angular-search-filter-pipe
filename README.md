@@ -38,4 +38,4 @@ This is file structure of my project:
 ----
 1. User will not paste any random sh*t.
 2. There is no click added on search icon. It's just for show.
-3. Start Time cannot be greater than End Time.
+3. It can work with any data within for-loop.
