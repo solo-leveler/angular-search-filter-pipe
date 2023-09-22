@@ -1,9 +1,6 @@
-# angular-search-filter-pipe
+# Custom Search Filter Pipe
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-aukk1b)
-
-# Custom Angular Material DateRange Time Picker
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-stb4s7)
 
 ### About the Project
 ---
