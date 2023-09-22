@@ -1,3 +1,41 @@
 # angular-search-filter-pipe
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-aukk1b)
+
+# Custom Angular Material DateRange Time Picker
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-stb4s7)
+
+### About the Project
+---
+Custom Angular Search Filter Pipe. 
+
+A custom search filter pipe using angular.
+### Overview 
+---
+In this project , the user will be able to search in the enitre data given as input.
+* The search will work on all the columns of mat-table.
+* Regex is used for enhanced performance.
+* The search count is also displayed during dynamic search.
+
+### Project File Description 
+---
+
+#### <img alt="Angular" style="background-color:#33475b" height="18px" src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png">
+All the angular files are in the src/app
+* _src/main_ : root file of the angular
+* _src/main/pure-search : The main files that runs in background. This files also include the main logic written for the search.
+
+### Local Installation & Setup Instructions :
+----
+This is file structure of my project: 
+```
+├──/src/app
+|   ├── ...
+|   └── app.module.ts
+└──package.json
+```
+### Assumptions 
+----
+1. User will not paste any random sh*t.
+2. There is no click added on search icon. It's just for show.
+3. Start Time cannot be greater than End Time.
