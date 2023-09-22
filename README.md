@@ -8,7 +8,7 @@
 A custom search filter pipe using angular.
 ### Overview 
 ---
-In this project , the user will be able to search in the enitre data given as input.
+In this project , the user will be able to search in the enitre data given using the input.
 * The search will work on all the columns of mat-table.
 * Regex is used for enhanced performance.
 * The search count is also displayed during dynamic search.
@@ -33,5 +33,5 @@ This is file structure of my project:
 ### Assumptions 
 ----
 1. User will not paste any random sh*t.
-2. There is no click added on search icon. It's just for show.
+2. There is no click added on search icon. It's just for visual effec.
 3. It can work with any data within for-loop.
