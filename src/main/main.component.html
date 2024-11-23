@@ -10,7 +10,10 @@
   </div>
 </div>
 <div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource | pureSearch: searchText:countObj">
+  <table
+    mat-table
+    [dataSource]="dataSource | pureSearch : searchText : countObj"
+  >
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef>Name</th>
